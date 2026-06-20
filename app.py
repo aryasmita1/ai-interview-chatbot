@@ -85,7 +85,7 @@ elif st.session_state.step == "interview":
         st.divider()
 
     # Current question
-    st.markdown("### 🤖 Interviewer")
+    st.markdown("### Interviewer")
     st.write(st.session_state.question)
 
     # Input
@@ -119,7 +119,7 @@ elif st.session_state.step == "interview":
 # ---------------- RESULT ----------------
 elif st.session_state.step == "result":
 
-    st.subheader("🎯 Interview Completed")
+    st.subheader("Interview Completed")
 
     result = st.session_state.evaluator.evaluate(
         st.session_state.role,
